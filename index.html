@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试</title>
+
+</head>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jquery.wordexport.js"></script>
+
+<body>
+  <input type="button" onclick="test()" value="导出到Word">
+  <div id="content" class="content">
+    <table id = "PrintA" width="100%" border="1" cellspacing="0" cellpadding="0" bgcolor = "white">
+      <tr style="text-align: center">
+        <td >名称名称名称名称</td>
+        <td colspan="3">程序员在这里程序员在这里程序员在这里</td>
+      </tr>
+      <tr style="text-align: center">
+        <td style="width: 25%">时间</td>
+        <td style="width: 50%">2019年7月17日</td>
+        <td style="width: 15%">地点</td>
+        <td style="width: 10%">深圳</td>
+      </tr>
+      <tr>
+        <td colSpan=4 style="text-align : center;">
+          哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+        </td>
+      </tr>
+      <tr>
+        <td colSpan=4 style="text-align : center;">
+          <img src="http://www.rongweisz.com/static/img/banner4.ecd9ed1.jpg" width="500" height="300">
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  <script type="text/javascript">
+    function test(){
+      $("#content").wordExport("我的测试文档");
+    }
+  </script>
+
+</body>
+<style type="text/css">
+  /*.view{*/
+  /*  width: 100%;*/
+  /*  height: 500px;*/
+  /*  border: 1px solid #000000;*/
+  /*}*/
+  /*.line1{*/
+  /*  display: flex;*/
+  /*  border-bottom: 1px solid #000000;*/
+  /*  text-align: center;*/
+  /*}*/
+  /*.line1-left{*/
+  /*  flex: 30%;*/
+  /*  border-right: 1px solid #000000;*/
+  /*}*/
+  /*.line1-right{*/
+  /*  flex: 70%;*/
+  /*}*/
+
+</style>
+</html>
